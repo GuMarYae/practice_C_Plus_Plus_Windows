@@ -1,1 +1,1 @@
-i = A_SIZE - 1;
+ std::cout << "\n";

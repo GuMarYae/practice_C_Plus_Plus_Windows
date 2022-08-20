@@ -5,22 +5,13 @@
 #include <iomanip>
 #include <cstdlib>
 
-void printArray(int[], int); // prototype
-
 int main()
 {
-  int numbers[11] = {1, 7, 3, 9, 2, 4, 3, 77, 11, 90, 11};
-  printArray(numbers, 11);//keep in mind that when invoking/calling an arrays variable name you dont add the brackets
-                          //in other words, its numbers not numbers[]
-  return 0;
-}
 
-void printArray(int list[], int arraySize)
-{
-  for (int i = 0; i < arraySize; i++)
-  {
-    std::cout << list[i] << std::endl; // again when using arrays, whether its a number in the [], or a variable name in the [
-                                       // youre most likely gonna end up denoting the arrayname or arrayname in the parameter
-                                       // this one went from list[], to list[i]
-  }
+  char cString[] = "Wats Poppinn";
+  const char typeString[13] = {'W', 'h', 'a', 't', 's', ' ', 'P', 'o', 'p', 'p', 'i', 'n'};
+
+  std::cout << cString << std::endl;
+  std::cout << typeString << std::endl;
+  return 0;
 }
